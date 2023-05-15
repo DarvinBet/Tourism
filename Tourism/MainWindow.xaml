@@ -1,0 +1,25 @@
+﻿<Window x:Class="Tourism.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tourism"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Source="/Resources/86cf4fa370cf3b370ede94c595556b81.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="355,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Text="Bwa" Height="50" Width="65" FontSize="36"/>
+        <Grid Background="#bae3e8" Panel.ZIndex="-2">
+            <Button Content="Back" Name="BackButt" Width="175" Height="30" HorizontalAlignment="Right" Margin="5" Click="BackButt_Click">
+            </Button>
+        </Grid>
+        <Grid Grid.Row="2" Background="#445c93"></Grid>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered_1"  Grid.Row="1" Name="MainFrame" Navigated="MainFrame_Navigated"></Frame>
+    </Grid>
+</Window>
